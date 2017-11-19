@@ -38,7 +38,7 @@
       "sources":[  
         {  
           "type":"file",
-          "path":"net.quetoo.Quetoo.appdata.xml"
+          "path":"org.quetoo.Quetoo.appdata.xml"
         }
       ]
     },
