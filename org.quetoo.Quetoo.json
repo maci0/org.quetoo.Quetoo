@@ -97,6 +97,10 @@
 					"autoreconf -fiv"
 				  ],
 				  "dest-filename": "autogen.sh"
+				},
+		                {
+				  "type": "file",
+				  "path": "appdata.xml"
 				}
             ]
             
