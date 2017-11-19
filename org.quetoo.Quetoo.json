@@ -1,0 +1,106 @@
+{
+    "app-id": "org.quetoo.Quetoo",
+    "command": "quetoo",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "1.6",
+    "sdk": "org.freedesktop.Sdk",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--device=dri",
+        "--share=network",
+        "--socket=pulseaudio",
+         "--system-talk-name=org.freedesktop.UPower",
+        "--filesystem=~/.quetoo"
+    ],
+    "cleanup": ["/include", "/lib/pkgconfig",
+                "/share/pkgconfig", "/share/aclocal",
+                "/man", "/share/man", "/bin/checkmk",
+                "*.la", "*.a", "/bin/test_physfs",
+                "/share/info",
+                "/share/doc"
+    ],
+    "modules": [
+        {
+            "name": "Check",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/libcheck/check.git"
+                },
+                {
+				  "type": "script",
+				  "commands": [
+					"autoreconf -fiv"
+				  ],
+				  "dest-filename": "autogen.sh"
+				}
+            ]
+        },
+        {
+            "name": "Objectively",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/jdolan/Objectively.git"
+                },
+				{
+				  "type": "script",
+				  "commands": [
+					"autoreconf -fiv"
+				  ],
+				  "dest-filename": "autogen.sh"
+				}
+            ]
+            
+        },
+        {
+            "name": "ObjectivelyMVC",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/jdolan/ObjectivelyMVC.git"
+                },
+				{
+				  "type": "script",
+				  "commands": [
+					"autoreconf -fiv"
+				  ],
+				  "dest-filename": "autogen.sh"
+				}
+            ]
+            
+        },
+        {
+            "name": "Physfs",
+            "buildsystem": "cmake",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://icculus.org/physfs/downloads/physfs-3.0.1.tar.bz2",
+                    "sha256": "b77b9f853168d9636a44f75fca372b363106f52d789d18a2f776397bf117f2f1"
+                }
+            ]
+            
+        },
+        {
+            "name": "Quetoo",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/jdolan/quetoo.git"
+                },
+				{
+				  "type": "script",
+				  "commands": [
+					"autoreconf -fiv"
+				  ],
+				  "dest-filename": "autogen.sh"
+				}
+            ]
+            
+        }
+        
+    ]
+}
