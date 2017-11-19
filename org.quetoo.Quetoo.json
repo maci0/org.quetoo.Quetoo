@@ -33,7 +33,7 @@
       "name":"metadata",
       "buildsystem":"simple",
       "build-commands":[  
-        "install -Dm644 org.quetoo.Quetoo.appdata.xml /app/share/appdata/ org.quetoo.Quetoo.appdata.xml"
+        "install -Dm644 org.quetoo.Quetoo.appdata.xml /app/share/appdata/org.quetoo.Quetoo.appdata.xml"
       ],
       "sources":[  
         {  
