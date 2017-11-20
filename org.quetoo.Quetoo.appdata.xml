@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <id type="desktop">quetoo.desktop</id>
-  <name>Quetoo</name>
+​<?xml version="1.0" encoding="UTF-8"?>
+​<component type="desktop-application">
+​  <id>org.quetoo.Quetoo</id>
+​  <metadata_license>FSFAP</metadata_license>
+​  <project_license>GPL-2.0+</project_license>
+​  <name>Quetoo</name>
   <summary>A Free, standalone first person shooter video game</summary>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2.0</project_license>
-  <description>
+​
+​  <description>
     <p>
       Quetoo is a Free, standalone first person shooter video game based
       on id Tech2. Our goal is to bring the fun of oldschool deathmatch
@@ -15,14 +16,34 @@
       Quetoo might not be for you.
     </p>
   </description>
-  <url type="homepage">https://quetoo.org/</url>
-  <screenshots>
-    <screenshot type="default">https://farm3.staticflickr.com/2818/33459192014_2e76a22a09_c.jpg</screenshot>
-    <screenshot>https://farm8.staticflickr.com/7191/6840396554_70726caf45_c.jpg</screenshot>
-    <screenshot>https://farm8.staticflickr.com/7044/6840397000_34e7699f1f_c.jpg</screenshot>
-  </screenshots>
-  <releases>
-    <release version="0.0.1" date="2017-11-19"/>
-  </releases>
+​
+​  <launchable type="desktop-id">org.quetoo.Quetoo.desktop</launchable>
+​
+​  <screenshots>
+​    <screenshot type="default">
+​      <caption>Screenshot 1</caption>
+​      <image>https://farm3.staticflickr.com/2818/33459192014_2e76a22a09_c.jpg</image>
+​    </screenshot>
+​    <screenshot>
+​      <image>https://farm8.staticflickr.com/7191/6840396554_70726caf45_c.jpg</image>
+​    </screenshot>
+​    <screenshot>
+​      <image>https://farm8.staticflickr.com/7044/6840397000_34e7699f1f_c.jpg<</image>
+​    </screenshot>
+​  </screenshots>
+​
+​  <url type="homepage">http://www.quetoo.org</url>
+​
+​  <provides>
+​    <binary>quetoo</binary>
+​  </provides>
+​
+​  <releases>
+​    <release version="0.1" date="2017-11-20">
+​      <description>
+​        <p>Initial Flatpak release</p>
+​      </description>
+​    </release>
+​  </releases>
   <updatecontact>maci.stgn@gmail.com</updatecontact>
-</application>
+​</component>
