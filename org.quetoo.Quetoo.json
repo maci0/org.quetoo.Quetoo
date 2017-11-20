@@ -167,6 +167,20 @@
           "dest-filename":"autogen.sh"
         }
       ]
-    }
+    },
+    {
+      "name":"Quetoo-Data",
+      "buildsystem":"simple",
+      "build-commands":[  
+        "mkdir -p /app/share/quetoo",
+		"cp -r target/default /app/share/quetoo"
+      ],
+      "sources":[  
+        {  
+          "type":"git",
+          "url":"https://github.com/jdolan/quetoo-data.git"
+        }
+      ]
+	}
   ]
 }
