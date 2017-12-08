@@ -11,7 +11,7 @@ flatpak install flathub org.freedesktop.Platform
 
 ```bash
 cd ~/Coding
-git clone https://github.com/maci0/org.quetoo.Quetoo.git
+git clone https://github.com/flathub/org.quetoo.Quetoo.git
 flatpak-builder --force-clean --repo=quetoo-repo build org.quetoo.Quetoo/org.quetoo.Quetoo.json
 ```
 ## Install & Test
